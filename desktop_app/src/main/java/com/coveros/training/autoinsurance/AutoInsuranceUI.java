@@ -10,7 +10,7 @@ import static javax.swing.SwingConstants.CENTER;
 public class AutoInsuranceUI extends JPanel {
 
     // server used for automating the UI
-    AutoInsuranceScriptServer autoInsuranceScriptServer;
+    transient AutoInsuranceScriptServer autoInsuranceScriptServer;
 
     JLabel label;
     JComboBox<String> claimsDropDown;
