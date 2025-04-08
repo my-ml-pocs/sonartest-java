@@ -39,7 +39,7 @@ public class LibraryBookListSearchServlet extends HttpServlet {
         } else if (idString.isEmpty() ) {
             result = searchByTitle(title);
         } else  {  // both id and title have an input
-            logger.info("Received request for books, by title and id - id {} and title {}", idString, title);
+            logger.info("Received request for books, by title and id");
             result = "Error: please search by either title or id, not both";
         }
         request.setAttribute(RESULT, result);
