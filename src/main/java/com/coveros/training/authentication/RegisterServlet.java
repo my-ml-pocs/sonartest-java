@@ -38,7 +38,7 @@ public class RegisterServlet extends HttpServlet {
             responseText = "no password provided";
         } else {
 
-            logger.info("received request to register a user, {}", username);
+            logger.info("received request to register a user");
 
             RegistrationResult registrationResult = registrationUtils.processRegistration(username, password);
 
