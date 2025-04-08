@@ -229,7 +229,7 @@ public class LibraryUtils {
     }
 
     public List<Book> listAllBooks() {
-        logger.info("received request to list all books");
+        logger.info("received request for books");
         return persistence.listAllBooks().orElse(new ArrayList<>());
     }
 
