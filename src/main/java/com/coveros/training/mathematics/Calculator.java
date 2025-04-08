@@ -89,7 +89,7 @@ public class Calculator {
         baz.doThirdPartyThing(a);
     }
 
-    public interface iFoo {
+    public interface IFoo {
         int doComplexThing(int a);
     }
 
