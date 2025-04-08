@@ -38,7 +38,7 @@ public class LoginServlet extends HttpServlet {
         } else if (password.isEmpty()) {
             responseText = "no password provided";
         } else {
-            logger.info("received request to authenticate a user, {}", username);
+            logger.info("received request to authenticate a user");
 
             final boolean userRegistered = loginUtils.isUserRegistered(username, password);
             responseText = userRegistered ? "access granted" : "access denied";
