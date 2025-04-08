@@ -103,7 +103,7 @@ public class Calculator {
     }
 
 
-    public interface iBar {
+    public interface IBar {
         int doOtherComplexThing(int c);
     }
 
