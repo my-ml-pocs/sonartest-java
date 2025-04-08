@@ -26,7 +26,7 @@ public class CheckUtils {
      * @param values the strings to check
      * @throws IllegalArgumentException if the string is null or empty
      */
-    public static void StringMustNotBeNullOrEmpty(String ... values) {
+    public static void isValidInput(String input) {
         for (String value: values) {
             if(value == null || value.isEmpty()) {
                 throw new IllegalArgumentException("string must not be null or empty at this point");
