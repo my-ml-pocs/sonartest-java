@@ -32,7 +32,7 @@ public class LibraryRegisterBookServlet extends HttpServlet {
         } else {
             request.setAttribute("book", book);
 
-            logger.info("received request to register a book, {}", book);
+            logger.info("received request to register a book");
 
             libraryActionResults = libraryUtils.registerBook(book);
         }
