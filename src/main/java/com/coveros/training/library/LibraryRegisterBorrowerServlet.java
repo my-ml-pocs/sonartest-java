@@ -32,7 +32,7 @@ public class LibraryRegisterBorrowerServlet extends HttpServlet {
         } else {
             request.setAttribute("borrower", borrower);
 
-            logger.info("received request to register a borrower, {}", borrower);
+            logger.info("received request to register a borrower");
 
             libraryActionResults = libraryUtils.registerBorrower(borrower);
         }
