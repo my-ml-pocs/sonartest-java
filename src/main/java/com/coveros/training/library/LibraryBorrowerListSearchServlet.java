@@ -39,7 +39,7 @@ public class LibraryBorrowerListSearchServlet extends HttpServlet {
         } else if (idString.isEmpty() ) {
             result = searchByName(name);
         } else  {  // both id and name have an input
-            logger.info("Received request for borrowers, by name and id - id {} and name {}", idString, name);
+            logger.info("Received request for borrowers, by name and id");
             result = "Error: please search by either name or id, not both";
         }
         request.setAttribute(RESULT, result);
