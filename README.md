@@ -11,7 +11,7 @@ documentation_ ... but that doesn't mean we can't have pretty good documentation
 * On the command line in the top directory of this repo, run `gradlew apprun`
 * Visit the application with your browser at http://localhost:8080/demo
 
-#### Summary:
+#### Summary: NEW LINE ADDED. 2PM
 
 Demo consists of a simple web application and tests.  Its goal is to provide 
 an environment suitable for demonstration and practice in valuable development
