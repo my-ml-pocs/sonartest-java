@@ -28,12 +28,12 @@ public class LoginUtils {
      */
     public boolean isUserRegistered(String username, String password) {
         CheckUtils.StringMustNotBeNullOrEmpty(username, password);
-        logger.info("checking if credentials for {} are valid for login", username);
+        logger.info("checking if credentials are valid for login");
         boolean isValid = persistenceLayer.areCredentialsValid(username, password).orElse(false);
         if (isValid) {
-            logger.info("credentials for {} are valid - granting access", username);
+            logger.info("credentials are valid - granting access");
         } else {
-            logger.info("credentials for {} were invalid - denying access", username);
+            logger.info("credentials were invalid - denying access");
         }
         return isValid;
     }
